@@ -1,0 +1,1 @@
+alter table people add column birthdate date;

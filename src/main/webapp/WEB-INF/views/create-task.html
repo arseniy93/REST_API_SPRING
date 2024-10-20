@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Create New Task</h1>
+
+    <!-- Task Creation Form -->
+    <form action="/ui/tasks" method="post">
+        <div>
+            <label for="status">Task Name:</label>
+            <input type="status" id="status" name="status" required>
+        </div>
+        <div>
+            <label for="description">Task Description:</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+        <div>
+            <button type="submit">Create Task</button>
+        </div>
+    </form>
+
+    <a href="/ui/tasks">Back to Tasks List</a>
+</div>
+
+</body>
+</html>
